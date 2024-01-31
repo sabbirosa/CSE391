@@ -7,6 +7,14 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --primary-color: #208c61;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
 body {
   font-family: "Space Grotesk", sans-serif;
   overflow-x: hidden;
@@ -44,6 +52,11 @@ nav {
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+  border-bottom: var(--primary-color) 2px solid;
 }
 
 .container {
@@ -85,6 +98,7 @@ nav {
 .hero-img img {
   width: 100%;
   border-radius: 10px;
+  border: #208c61 2px solid;
 }
 
 .about-me {
@@ -95,4 +109,60 @@ nav {
   padding: 0 10%;
   background-color: #1b1b1b;
   color: white;
+}
+
+.about-me-content,
+.about-me-img {
+  flex-basis: 50%;
+  justify-content: space-around;
+  padding: 0px 20px;
+}
+
+.about-me-title {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.about-me-text {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.about-me-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.skills table {
+  border-spacing: 0px;
+}
+
+.skills tr {
+  color: white;
+  font-size: 16px;
+}
+
+.skills td:first-child {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.skills td {
+  padding: 5px 10px 5px 0px;
+  border: none 1px solid;
+}
+
+.about-me-social {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.about-me-social a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 24px;
 }
