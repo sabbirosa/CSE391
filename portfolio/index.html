@@ -27,12 +27,14 @@
             >
           </h1>
           <p class="hero-description">
-            I'm a driven and dedicated software developer with a passion for
+            from Dhaka, Bangladesh. I enjoy taking complex problems and turning
             crating efficient and effective solutions. I strive to deliver
             high-quality and user-friendly software that meets the needs of
-            clients and end-users. Let's work together to bring your next
-            project to life.
+            clients and end-users. This page is the assignment of my
+            <span><a href="https://pizza.com">CSE391</a></span> course.
           </p>
+          <button class="action-btn1">Download CV</button>
+          <button class="action-btn2">Hire Me</button>
         </div>
         <div class="hero-img">
           <img src="../portfolio/assets/images/Sabbir-Profile.jpg" alt="" />
@@ -50,11 +52,15 @@
           </div>
           <div class="about-me-text">
             <p>
-              I am a student of Computer Science at Brac University. I am a
-              passionate learner and a hard worker. I am always eager to learn
-              new things and apply them in my work. I am also a team player and
-              I believe that a team can achieve more than an individual. I am a
-              quick learner and I am always ready to take on new challenges.
+              I am a student of Computer Science at
+              <span
+                ><a href="https://www.bracu.ac.bd">Brac University.</a></span
+              >
+              I am a passionate learner and a hard worker. I am always eager to
+              learn new things and apply them in my work. I am also a team
+              player and I believe that a team can achieve more than an
+              individual. I am a quick learner and I am always ready to take on
+              new challenges.
             </p>
           </div>
           <div class="skills">
@@ -113,10 +119,28 @@
         <div class="all-projects">
           <div class="project-item">
             <div class="project-img">
+              <img src="../portfolio/assets/images/assignment-1.png" alt="" />
+            </div>
+            <div class="project-info">
+              <h2>Personal Porfolio</h2>
+              <p>
+                This is the first assignment of this course. Where I've created
+                this portfolio page of mine.
+              </p>
+              <div class="project-link">
+                <a
+                  href="https://github.com/sabbirosa/CSE391/tree/main/portfolio"
+                  >Source Code</a
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-img">
               <img src="../portfolio/assets/images/project.jpg" alt="" />
             </div>
             <div class="project-info">
-              <h2>Project Title</h2>
+              <h2>Assignment 2</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatum, quibusdam.
@@ -132,23 +156,7 @@
               <img src="../portfolio/assets/images/project.jpg" alt="" />
             </div>
             <div class="project-info">
-              <h2>Project Title</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum, quibusdam.
-              </p>
-              <div class="project-link">
-                <a href="#">Source Code</a
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </div>
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-img">
-              <img src="../portfolio/assets/images/project.jpg" alt="" />
-            </div>
-            <div class="project-info">
-              <h2>Project Title</h2>
+              <h2>Assignment 3</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatum, quibusdam.
@@ -161,6 +169,22 @@
           </div>
         </div>
       </div>
+      <div class="research-papers">
+        <h2>Research Papers</h2>
+        <ul>
+          <li>
+            Detecting Biases in Newspapers using Natural Language Processing
+          </li>
+          <li>
+            Ranking resumes based on job descriptions using Natural Language
+            Processing
+          </li>
+          <li>
+            Beyond Land and Religion: Understanding the Roots of the
+            Israel-Palestine Conflict
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="quote">
@@ -169,14 +193,14 @@
         <blockquote>
           <p>
             “What's the bravest thing you ever said?”
-            <i>asked the boy.</i> <bold>“Help”</bold> <i>said the horse.</i>
+            <i>asked the boy.</i> <strong>“Help”</strong> <i>said the horse.</i>
           </p>
           <p>
             “Asking for help isn't giving up,” <i>said the horse,</i> “it's
             refusing to give up.”
           </p>
           <footer>
-            - <cite>The Boy, The Mole, The Fox and The Horse</cite>
+            <cite>- The Boy, The Mole, The Fox and The Horse</cite>
           </footer>
         </blockquote>
       </div>
@@ -214,7 +238,7 @@
             </div>
           </div>
         </div>
-        <form action="">
+        <form>
           <h2>Send a Message</h2>
           <div class="form-box">
             <div class="input-group">
@@ -241,13 +265,30 @@
         </form>
       </div>
     </section>
+
     <footer>
-      <p>&copy; Sabbir Bin Abdul Latif. All rights reserved.</p>
+      <div class="site-info">
+        <p id="location"></p>
+        <p id="lastModified"></p>
+      </div>
+      <div class="copyright-info">
+        <p>&copy; 2024 Sabbir Bin Abdul Latif</p>
+      </div>
     </footer>
 
     <script
       src="https://kit.fontawesome.com/7166c8c0eb.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.getElementById(
+        "location"
+      ).innerHTML = `<span class="primary-color">Page's Location:</span> ${window.location.href}`;
+      document.getElementById(
+        "lastModified"
+      ).innerHTML = `<span class="primary-color">Last Modified:</span> ${document.lastModified}`;
+    </script>
+
+    <script src="script.js"></script>
   </body>
 </html>
