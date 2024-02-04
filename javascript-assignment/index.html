@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="quote-section">
+      <div id="quote-box">
+        <p id="quote"></p>
+        <p id="author"></p>
+      </div>
+      <div id="color-buttons">
+        <button id="green-btn" class="green-btn">Green</button>
+        <button id="blue-btn" class="blue-btn">Blue</button>
+        <button id="yellow-btn" class="yellow-btn">Yellow</button>
+        <button id="orange-btn" class="orange-btn">Orange</button>
+      </div>
+    </section>
+
+    <section id="hero-converter-section">
+      <div id="hero-converter-box">
+        <h1>Hero Converter</h1>
+        <div>
+          <input
+            type="text"
+            id="hero-input"
+            placeholder="Enter an amount here"
+          />
+          <select id="hero-select">
+            <option value="kg-to-pound">Kg to Pound</option>
+            <option value="pound-to-kg">Pound to Kg</option>
+          </select>
+          <button id="hero-btn">Convert</button>
+        </div>
+        <p id="hero-result"></p>
+      </div>
+    </section>
+
+    <section id="number-box-section">
+      <div id="number-box">
+        <h1>Number Box</h1>
+        <input
+          type="text"
+          id="number-input"
+          placeholder="Enter a series of numbers separated by comma"
+        />
+        <div id="number-result">
+          <p id="max">Max</p>
+          <p id="min">Min</p>
+          <p id="sum">Sum</p>
+          <p id="average">Average</p>
+          <p id="reverse">Reverse</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="magic-box-section">
+      <div id="magic-box">
+        <h1>Magic Box</h1>
+        <textarea id="magic-textarea" placeholder="Enter text here"></textarea>
+        <div id="magic-buttons">
+          <button id="clear-all">Clear All</button>
+          <button id="capitalize">Capitalize</button>
+          <button id="sort">Sort</button>
+          <button id="reverse-text">Reverse</button>
+          <button id="strip-blank">Strip Blank</button>
+          <button id="add-numbers">Add Numbers</button>
+          <button id="shuffle">Shuffle</button>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

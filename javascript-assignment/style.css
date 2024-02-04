@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+:root {
+  --green-background: #006600;
+  --green-text: #bfffbf;
+  --blue-background: #001f7d;
+  --blue-text: #bfcfff;
+  --yellow-background: #ffff4d;
+  --yellow-text: #b39a36;
+  --orange-background: #ff9400;
+  --orange-text: #b36800;
+}
+
+#quote-section,
+#hero-converter-section,
+#number-box-section,
+#magic-box-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  height: 200px;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--green-background);
+  color: var(--green-text);
+  margin-bottom: 2rem;
+}
+
+#quote-box p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#color-buttons button {
+  margin: 0 0.25rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.green-btn {
+  background-color: var(--green-background);
+  color: var(--green-text);
+}
+
+.blue-btn {
+  background-color: var(--blue-background);
+  color: var(--blue-text);
+}
+
+.yellow-btn {
+  background-color: var(--yellow-background);
+  color: var(--yellow-text);
+}
+
+.orange-btn {
+  background-color: var(--orange-background);
+  color: var(--orange-text);
+}
+
+#hero-converter-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  height: 300px;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--blue-background);
+  color: var(--blue-text);
+}
+
+#hero-converter-box p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#hero-converter-box button {
+  margin: 0 0.25rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  background-color: var(--yellow-background);
+  color: var(--yellow-text);
+}
+
+#hero-converter-box input,
+select {
+  padding: 1rem;
+  width: 200px;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--blue-background);
+}
+
+select {
+  cursor: pointer;
+}
+
+#number-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  height: 300px;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--orange-background);
+  color: var(--orange-text);
+}
+
+#number-box p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#number-box input {
+  padding: 1rem;
+  width: 200px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--orange-background);
+}
+
+#magic-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  height: 600px;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--green-background);
+  color: var(--green-text);
+}
+
+#magic-box p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#magic-box textarea {
+  padding: 1rem;
+  width: 600px;
+  height: 600px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--green-background);
+}
+
+#magic-box button {
+  margin: 0 0.05rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.75rem;
+  background-color: var(--blue-background);
+  color: var(--blue-text);
+}
