@@ -17,9 +17,41 @@ body {
   --blue-background: #001f7d;
   --blue-text: #bfcfff;
   --yellow-background: #ffff4d;
-  --yellow-text: #b39a36;
-  --orange-background: #ff9400;
-  --orange-text: #b36800;
+  --yellow-text: #8a7625;
+  --orange-background: #ffc862;
+  --orange-text: #5f3a05;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background-color: #f0db4f;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header a {
+  text-decoration: none;
+  color: #323330;
+  transition: all 0.3s ease;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #323330;
+  transition: all 0.3s ease;
 }
 
 #quote-section,
@@ -33,12 +65,28 @@ body {
   height: 100vh;
 }
 
+#quote-section {
+  background-color: #ebffeb;
+}
+
+#hero-converter-section {
+  background-color: #e2e2ff;
+}
+
+#number-box-section {
+  background-color: #fff3e1;
+}
+
+#magic-box-section {
+  background-color: #ebffeb;
+}
+
 #quote-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 700px;
-  height: 200px;
+  height: 300px;
   justify-content: center;
   padding: 2rem;
   border-radius: 0.5rem;
@@ -117,18 +165,28 @@ body {
 #hero-converter-box input,
 select {
   padding: 1rem;
-  width: 200px;
   margin-bottom: 2rem;
   margin-top: 1rem;
   border-radius: 0.25rem;
   border: none;
   font-size: 1rem;
   text-align: center;
+  background-color: #eaefff;
   color: var(--blue-background);
+}
+
+#hero-converter-box input {
+  width: 250px;
 }
 
 select {
   cursor: pointer;
+  width: 140px;
+}
+
+#hero-input::placeholder {
+  color: var(--blue-background);
+  opacity: 0.8;
 }
 
 #number-box {
@@ -136,12 +194,17 @@ select {
   flex-direction: column;
   align-items: center;
   width: 700px;
-  height: 300px;
+  height: 400px;
   justify-content: center;
   padding: 2rem;
   border-radius: 0.5rem;
   background-color: var(--orange-background);
   color: var(--orange-text);
+}
+
+#number-input::placeholder {
+  color: var(--orange-text);
+  opacity: 0.5;
 }
 
 #number-box p {
@@ -152,22 +215,29 @@ select {
 
 #number-box input {
   padding: 1rem;
-  width: 200px;
-  margin-bottom: 1rem;
+  width: 80%;
+  margin-bottom: 2rem;
   margin-top: 1rem;
   border-radius: 0.25rem;
   border: none;
   font-size: 1rem;
   text-align: center;
-  color: var(--orange-background);
+  color: var(--orange-text);
+  background-color: #fffad0;
+}
+
+#number-result {
+  display: flex;
+  width: 80%;
+  align-items: flex-start;
 }
 
 #magic-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 700px;
-  height: 600px;
+  width: 800px;
+  height: 500px;
   justify-content: center;
   padding: 2rem;
   border-radius: 0.5rem;
@@ -183,7 +253,7 @@ select {
 
 #magic-box textarea {
   padding: 1rem;
-  width: 600px;
+  width: 700px;
   height: 600px;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -191,17 +261,26 @@ select {
   border: none;
   font-size: 1rem;
   text-align: center;
+  background-color: #ebffeb;
   color: var(--green-background);
 }
 
 #magic-box button {
   margin: 0 0.05rem;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   background-color: var(--blue-background);
   color: var(--blue-text);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0db4f;
 }

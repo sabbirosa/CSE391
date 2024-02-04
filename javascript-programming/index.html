@@ -7,6 +7,17 @@
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <h1><a href="">JavaScript Programming</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#quote-section">Quote</a></li>
+          <li><a href="#hero-converter-section">Hero Converter</a></li>
+          <li><a href="#number-box-section">Number Box</a></li>
+          <li><a href="#magic-box-section">Magic Box</a></li>
+        </ul>
+      </nav>
+    </header>
     <section id="quote-section">
       <div id="quote-box">
         <p id="quote"></p>
@@ -35,7 +46,7 @@
           </select>
           <button id="hero-btn">Convert</button>
         </div>
-        <p id="hero-result"></p>
+        <p id="hero-result">Result: 0</p>
       </div>
     </section>
 
@@ -48,11 +59,13 @@
           placeholder="Enter a series of numbers separated by comma"
         />
         <div id="number-result">
-          <p id="max">Max</p>
-          <p id="min">Min</p>
-          <p id="sum">Sum</p>
-          <p id="average">Average</p>
-          <p id="reverse">Reverse</p>
+          <div>
+            <p id="max" style="text-align: left">Max:</p>
+            <p id="min" style="text-align: left">Min:</p>
+            <p id="sum" style="text-align: left">Sum:</p>
+            <p id="average" style="text-align: left">Average:</p>
+            <p id="reverse" style="text-align: left">Reverse:</p>
+          </div>
         </div>
       </div>
     </section>
@@ -72,6 +85,9 @@
         </div>
       </div>
     </section>
+    <footer>
+      <p>&copy; 2024 Sabbir Bin Abdul Latif</p>
+    </footer>
 
     <script type="module" src="app.js"></script>
   </body>

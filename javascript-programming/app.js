@@ -27,13 +27,13 @@ blueButton.addEventListener("click", () => {
 yellowButton.addEventListener("click", () => {
     console.log("Yellow button clicked");
     quoteBox.style.backgroundColor = "#ffff4d";
-    quoteBox.style.color = "#b39a36";
+    quoteBox.style.color = "#8a7625";
 });
 
 orangeButton.addEventListener("click", () => {
     console.log("Orange button clicked");
-    quoteBox.style.backgroundColor = "#ff9400";
-    quoteBox.style.color = "#b36800";
+    quoteBox.style.backgroundColor = "#ffc862";
+    quoteBox.style.color = "#5f3a05";
 });
 
 const heroBtn = document.getElementById("hero-btn");
@@ -58,65 +58,32 @@ heroBtn.addEventListener("click", () => {
 
 const numberInput = document.getElementById("number-input");
 
-numberInput.addEventListener("keypress", () => {
+numberInput.addEventListener("input", () => {
     var inputValues = numberInput.value
 
     const numbersInput = inputValues.split(",");
     let numbers = [];
 
     for (let i = 0; i < numbersInput.length; i++) {
-        if (numbersInput[i] != "" || numbersInput[i] != " " || isNaN(numbersInput[i]) === false) {
-        numbers[i] = Number(numbersInput[i]);
-    }}
+        const trimmedValue = numbersInput[i].trim();
+        if (trimmedValue !== "") {
+            numbers.push(Number(trimmedValue));
+        }
+    }
 
     let max = Math.max(...numbers);
     let min = Math.min(...numbers);
     let sum = numbers.reduce((a, b) => a + b, 0);
     let average = sum / numbers.length;
-    let reverseArr = numbers.reverse();
+    let reverseArr = numbers.slice().reverse().join(', ');
 
     document.getElementById("max").innerText = `Max: ${max}`;
     document.getElementById("min").innerText = `Min: ${min}`;
     document.getElementById("sum").innerText = `Sum: ${sum}`;
     document.getElementById("average").innerText = `Average: ${average}`;
     document.getElementById("reverse").innerText = `Reverse: ${reverseArr}`;
+
 });
-
-// <section id="magic-box-section">
-//       <!-- Magic!:
-// The HTML structure is given below, we must add JavaScript code to make the UI respond when
-// the user clicks the buttons.
-// Add the following behavior to the buttons:
-// Clear All: Deletes all text from the text area.
-// Capitalize: Converts the text to upper/lower case. Button will work as toggle.
-// Sort: Rearranges the lines into sorted alphabetical order.
-// Reverse: Reverses the order of the text in each line.
-// Strip Blank: Removes any empty lines from the text area. Also remove empty space at beginning
-// or end of any line.
-// Add Numbers: Places a number in front of each line, such as "1. " (Ignore previous numbers in
-// front of them.)
-// Shuffle: Rearranges the lines into a random order. Js do not have this built in, use
-// Math.random().
-// Hints: Use getElementById to get String, which has a split method to break it into smaller string
-// array. Then apply various native methods of array to get most of the things done. -->
-//       <div id="magic-box">
-//         <h1>Magic Box</h1>
-//         <textarea id="magic-textarea" placeholder="Enter text here"></textarea>
-//         <div id="magic-buttons">
-//           <button id="clear-all">Clear All</button>
-//           <button id="capitalize">Capitalize</button>
-//           <button id="sort">Sort</button>
-//           <button id="reverse-text">Reverse</button>
-//           <button id="strip-blank">Strip Blank</button>
-//           <button id="add-numbers">Add Numbers</button>
-//           <button id="shuffle">Shuffle</button>
-//         </div>
-//       </div>
-//     </section>
-
-//     <script type="module" src="app.js"></script>
-//   </body>
-// </html>
 
 
 const clearAll = document.getElementById("clear-all");
