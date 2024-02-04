@@ -21,13 +21,13 @@ greenButton.addEventListener("click", () => {
 blueButton.addEventListener("click", () => {
     console.log("Blue button clicked");
     quoteBox.style.backgroundColor = "#001f7d";
-    quoteBox.style.color = "#bfcfff";
+    quoteBox.style.color = "#d0dcff";
 });
 
 yellowButton.addEventListener("click", () => {
     console.log("Yellow button clicked");
     quoteBox.style.backgroundColor = "#ffff4d";
-    quoteBox.style.color = "#8a7625";
+    quoteBox.style.color = "#806c1d";
 });
 
 orangeButton.addEventListener("click", () => {
@@ -155,6 +155,7 @@ addNumbers.addEventListener("click", () => {
             text[i] = `${i + 1}. ${text[i]}`;
         }
         magicTextarea.value = text.join("\n");
+        lastValue = magicTextarea.value;
         numberAdded = true;
     }
 });
