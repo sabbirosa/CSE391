@@ -16,6 +16,9 @@
   color: var(--primary-color);
 }
 
+a {
+}
+
 span a {
   color: var(--primary-color);
 }
@@ -262,6 +265,16 @@ nav {
 
 .project-info {
   padding: 20px;
+}
+
+.project-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-info h2 a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .project-info h2 {
